@@ -1,3 +1,9 @@
+# revision 16093
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/bibhtml
+# catalog-date 2009-11-03 16:56:08 +0100
+# catalog-license gpl
+# catalog-version 2.0.1
 Name:		texlive-bibhtml
 Version:	2.0.1
 Release:	1
@@ -59,6 +65,7 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/bibrefs.bib
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/detex.sed
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/style.css
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -69,3 +76,5 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
