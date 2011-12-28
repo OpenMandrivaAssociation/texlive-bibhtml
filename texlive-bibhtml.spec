@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Bibhtml consists of a Perl script and a set of BibTeX style
@@ -31,20 +29,12 @@ provides three different style files derived from each of the
 standard plain.bst and alpha.bst, as well as two style files
 derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -66,7 +56,6 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/bibrefs.bib
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/detex.sed
 %doc %{_texmfdistdir}/doc/bibtex/bibhtml/style.css
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,5 +66,3 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
