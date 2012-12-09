@@ -66,3 +66,18 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0.1-2
++ Revision: 749605
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0.1-1
++ Revision: 717919
+- texlive-bibhtml
+- texlive-bibhtml
+- texlive-bibhtml
+- texlive-bibhtml
+- texlive-bibhtml
+
