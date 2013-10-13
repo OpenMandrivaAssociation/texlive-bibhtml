@@ -1,12 +1,12 @@
-# revision 16093
+# revision 31607
 # category Package
 # catalog-ctan /biblio/bibtex/contrib/bibhtml
-# catalog-date 2009-11-03 16:56:08 +0100
+# catalog-date 2013-09-08 21:40:59 +0200
 # catalog-license gpl
-# catalog-version 2.0.1
+# catalog-version 2.0.2
 Name:		texlive-bibhtml
-Version:	2.0.1
-Release:	2
+Version:	2.0.2
+Release:	1
 Summary:	BibTeX support for HTML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
@@ -66,18 +66,3 @@ derived from abbrv.bst and unsrt.bst (i.e., eight in total).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0.1-2
-+ Revision: 749605
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0.1-1
-+ Revision: 717919
-- texlive-bibhtml
-- texlive-bibhtml
-- texlive-bibhtml
-- texlive-bibhtml
-- texlive-bibhtml
-
