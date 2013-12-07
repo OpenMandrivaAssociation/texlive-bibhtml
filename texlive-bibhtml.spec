@@ -6,7 +6,7 @@
 # catalog-version 2.0.2
 Name:		texlive-bibhtml
 Version:	2.0.2
-Release:	4
+Release:	5
 Summary:	BibTeX support for HTML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
