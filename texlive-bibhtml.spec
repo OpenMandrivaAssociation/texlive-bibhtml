@@ -5,8 +5,8 @@ Summary:	BibTeX support for HTML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.r31607.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.doc.r31607.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
