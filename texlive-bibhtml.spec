@@ -1,6 +1,6 @@
 Name:		texlive-bibhtml
 Version:	31607
-Release:	1
+Release:	2
 Summary:	BibTeX support for HTML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
