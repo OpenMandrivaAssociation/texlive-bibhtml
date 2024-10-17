@@ -3,7 +3,7 @@ Version:	31607
 Release:	2
 Summary:	BibTeX support for HTML files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/bibhtml
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibhtml.doc.r%{version}.tar.xz
